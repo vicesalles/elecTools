@@ -22,7 +22,7 @@ class Ohm extends Component {
                 <Parameter unity={this.getUnity} />
                 <TextField ref="field1" change={this.valOne} placeholder={this.state.field1} value={this.state.val1} />
                 <span className="signe"> {this.state.signe} </span>
-                <TextField ref="field2" change={this.valTwo} placeholder={this.state.field2} value={this.state.val2}/>
+                <TextField ref="field2" change={this.valTwo} placeholder={this.state.field2} value={this.state.val2} />
                 <Result result={this.state.resultat} unity={this.state.unitat} />
                 <button onClick={this.reset}>Reset</button>
             </div>
@@ -76,7 +76,7 @@ class Ohm extends Component {
             r = v1 * v2;
         }
 
-        if (isNaN(r)) {
+        if (isNaN(r) || r === Infinity) {
             r = 0;
         }
 
@@ -86,9 +86,9 @@ class Ohm extends Component {
 
     reset() {
 
-       this.refs.field1.setState({text:''});
-       this.refs.field2.setState({text:''});
-       this.setState({ unitat: 'V', field1: 'Resistència', signe: 'X', field2: 'Intensitat', val1: 0, val2: 0, resultat: 0 });
+        this.refs.field1.setState({ text: '' });
+        this.refs.field2.setState({ text: '' });
+        this.setState({ unitat: 'V', field1: 'Resistència', signe: 'X', field2: 'Intensitat', val1: 0, val2: 0, resultat: 0 });
 
     }
 }
