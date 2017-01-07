@@ -1,5 +1,35 @@
 body{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: lightgray;
+}
+
+h1{
+  color: blueviolet;
+  }
+
+h2{
+  color:blueviolet;
+}
+
+main{
+ display: flex;
+ justify-content:center;  
+}
+
+section{
+
+  margin: 3em auto;
+  padding: 1em 2em 1em 2em;
+  background-color: white;
+  box-shadow: 0px 0px 15px 2px black;
+  -moz-box-shadow: 0px 0px 15px 2px black;
+  -webkit-box-shadow: 0px 0px 15px 2px black;
+  
+}
+
+footer{
+  margin-top: 1.5em;
+  text-align: center;
 }
 
 select{
@@ -17,17 +47,6 @@ input{
   margin: 0em 2em 0em 2em;
   border: 2px solid gray;
 
-}
-main{
- display: flex;
-  justify-content:center;  
-}
-
-section{
- 
-  min-width: 800px;
-  margin: 0 auto;
-  
 }
 
 .signe{
@@ -57,10 +76,21 @@ button:hover{
   border: 0.2px solid red;
 }
 
-h1{
-  color: blueviolet;
-  }
 
-h2{
-  color:blueviolet;
+
+
+#me{
+  text-decoration: none;
+  color: darkslategray;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.4em;
+  text-align: center;
+  padding: 0em 1em 0em 1em; 
+}
+
+#me:hover{
+  background-color: darkslategray;
+  color:white;
+  
 }

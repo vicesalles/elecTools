@@ -10,6 +10,9 @@ class App extends Component {
         <section>
           <h1>Ohm's Law</h1>
           <Ohm />
+          <footer>
+            <a id="me" href="http://vicesalles.me" target="_blank">Vice Sallés | front-end storyteller | training projects</a>
+          </footer>
         </section>
       </main>
     );
